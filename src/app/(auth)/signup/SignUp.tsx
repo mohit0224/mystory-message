@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import signupValidationSchema from "@/validationSchema/signupValidationSchema";
 import authServices from "@/services/authServices";
 import { toast } from "sonner";
-import { Loader2 } from "lucide-react";
+import { Loader2, MoveLeft } from "lucide-react";
 import {
 	Form,
 	FormControl,
@@ -89,6 +89,9 @@ const SignUp = () => {
 				<section className="flex justify-center">
 					<div className="w-full max-w-md rounded-md p-6 bg-white shadow-lg">
 						<div className="space-y-2">
+							<Link href={"/"}>
+								<MoveLeft />
+							</Link>
 							<h1 className="text-3xl font-bold">Signup for new account</h1>
 							<p className=" font-semibold tracking-tight">
 								Have an account ? <Link href={"/signin"}>login</Link>

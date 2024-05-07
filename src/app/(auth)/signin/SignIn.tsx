@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
+import { Loader2, MoveLeft } from "lucide-react";
 import { signIn } from "next-auth/react";
 import { toast } from "sonner";
 import Container from "@/components/Container";
@@ -62,6 +62,9 @@ const SignIn = () => {
 				<section className="flex justify-center">
 					<div className="w-full max-w-md rounded-md p-6 bg-white shadow-lg">
 						<div className="space-y-2">
+							<Link href={"/"}>
+								<MoveLeft />
+							</Link>
 							<h1 className="text-3xl font-bold">Signin your account</h1>
 							<p className="font-semibold tracking-tight">
 								Don&apos;t have an account ?{" "}
