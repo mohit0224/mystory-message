@@ -10,7 +10,7 @@ const Header = () => {
 	const { data: session } = useSession();
 	const user: User = session?.user as User;
 	return (
-		<nav className=" w-screen px-8 xl:px-10 fixed top-0 left-0 ">
+		<nav className=" w-screen px-8 xl:px-10 fixed top-0 left-0 bg-white">
 			{/* web header */}
 			<div className="h-16 hidden sm:flex items-center justify-between">
 				<Link
