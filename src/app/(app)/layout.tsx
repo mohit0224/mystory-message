@@ -2,7 +2,7 @@ import Header from "@/components/header/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Mystory Messages",
+	title: "Mystry Messages",
 	description: "Send annonymous messages",
 };
 

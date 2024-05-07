@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Mystory Messages",
+	title: "Mystry Messages",
 	description: "Send annonymous messages",
 };
 
