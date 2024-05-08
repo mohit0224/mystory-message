@@ -8,9 +8,9 @@ export const verificationEmailSender = async (
 ) => {
 	try {
 		const response = await resend.emails.send({
-			from: "messag@mohitdheer.shop",
+			from: "verificationcode@mohitdheer.shop",
 			to: email,
-			subject: "Learn Next | Verification code",
+			subject: "Mystry message | Verification code",
 			react: VerificationEmail({ username, otp: verificationCode }),
 		});
 		return response;
